@@ -51,7 +51,7 @@ function createConfig()
 EOF
 
   for i in "${TEST[@]}"; do
-    echo "\$testFiles[] = '${i}MB';" >> "$DIR/$CONFIG"
+    echo "\$testFiles[] = '${i}';" >> "$DIR/$CONFIG"
   done
   echo -e "// Theme\n\$theme = '${THEME}';" >> "$DIR/$CONFIG"
 
