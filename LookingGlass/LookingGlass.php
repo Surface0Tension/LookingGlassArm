@@ -226,6 +226,7 @@ class LookingGlass
                     $str = preg_replace('/^[0-9] /', '&nbsp;' . $string[0], $str);
                     $match++;
                 }
+                /*
                 // check for consecutive failed hops
                 if (strpos($str, '* * *') !== false) {
                     $fail++;
@@ -239,6 +240,7 @@ class LookingGlass
                     $lastFail = $traceCount;
                 }
                 $traceCount++;
+                */
             }
 
             // pad string for live output
